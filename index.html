@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/Meyer-reset.css"> 
-    <style lang="sass">
-      @import url('/scss/main.scss');
-    </style>
-    <title>Vite Project</title>
-  </head>
-  <body>
-    <section class="header-section">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/foundation.css">
+  <link rel="stylesheet" href="./css/foundation.min.css">
+  <link rel="stylesheet" href="./scss/main.scss">
+  <title>Vite Project</title>
+</head>
+
+<body>
+  <section class="header-section">
+    <div class="container">
       <div class="header">
         <div class="header-socials">
           <div class="links">
-            <ul class="links-list">
+            <ul class="links-list grid-y">
               <li class="links-list__item">
-                facebook
+                <svg width="8" height="14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M5.627 0C3.656 0 2.5 1.041 2.5 3.413V5.5H0V8h2.5v6H5V8h2l.5-2.5H5V3.836C5 2.943 5.292 2.5 6.13 2.5H7.5V.103A15.291 15.291 0 0 0 5.627 0Z"
+                    fill="#555" /></svg>
               </li>
               <li class="links-list__item">
-                instagram
+                <svg width="12" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3.735 0A3.247 3.247 0 0 0 .5 3.235v4.53A3.247 3.247 0 0 0 3.735 11h4.53A3.247 3.247 0 0 0 11.5 7.766V3.235A3.247 3.247 0 0 0 8.265 0h-4.53Zm0 1h4.53A2.231 2.231 0 0 1 10.5 3.235v4.53A2.23 2.23 0 0 1 8.265 10h-4.53A2.23 2.23 0 0 1 1.5 7.766V3.235A2.232 2.232 0 0 1 3.735 1Zm5.218 1.094a.451.451 0 0 0-.453.453.45.45 0 0 0 .627.42.451.451 0 0 0 .246-.594.451.451 0 0 0-.42-.279ZM6 2.5c-1.65 0-3 1.35-3 3s1.35 3 3 3 3-1.35 3-3-1.35-3-3-3Zm0 1c1.112 0 2 .888 2 2s-.888 2-2 2-2-.888-2-2 .888-2 2-2Z"
+                    fill="#9F9F9F" /></svg>
               </li>
               <li class="links-list__item">
-                linkedin
+                <svg width="11" height="11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M1.821 0A1.32 1.32 0 0 0 .5 1.32c0 .73.591 1.335 1.32 1.335A1.333 1.333 0 0 0 2.755.387 1.32 1.32 0 0 0 1.822 0Zm6.446 3.5c-1.109 0-1.743.58-2.048 1.157h-.033V3.655H4V11h2.279V7.364c0-.957.072-1.883 1.257-1.883 1.168 0 1.186 1.092 1.186 1.944V11H11V6.966C11 4.992 10.575 3.5 8.268 3.5Zm-7.585.155V11h2.28V3.655H.682Z"
+                    fill="#9F9F9F" /></svg>
               </li>
               <li class="links-list__item">
-                twitter
+                <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 1.157c-.45.2-.926.33-1.414.387A2.47 2.47 0 0 0 11.668.182a4.96 4.96 0 0 1-1.563.598A2.462 2.462 0 0 0 5.91 3.024 6.978 6.978 0 0 1 .835.452a2.458 2.458 0 0 0 .762 3.288 2.448 2.448 0 0 1-1.115-.31v.032a2.461 2.461 0 0 0 1.975 2.414c-.362.1-.743.114-1.112.043a2.466 2.466 0 0 0 2.299 1.71A4.938 4.938 0 0 1 0 8.648a6.962 6.962 0 0 0 3.773 1.108c4.53 0 7.006-3.752 7.006-7.006 0-.105-.004-.213-.008-.319.482-.348.898-.78 1.229-1.272Z"
+                    fill="#9F9F9F" /></svg>
               </li>
               <li class="links-list__item">
-                b
+                <svg width="10" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M3 0a3 3 0 0 0-3 3v3.5a3 3 0 0 0 3 3h3.5a3 3 0 0 0 3-3V4a.5.5 0 0 0-.5-.5h-.5A.5.5 0 0 1 8 3a3 3 0 0 0-3-3H3Zm0 2.5h2c.275 0 .5.225.5.5s-.225.5-.5.5H3a.501.501 0 0 1-.5-.5c0-.275.225-.5.5-.5ZM3 6h3.5c.275 0 .5.225.5.5s-.225.5-.5.5H3a.501.501 0 0 1-.5-.5c0-.275.225-.5.5-.5Z"
+                    fill="#9F9F9F" /></svg>
               </li>
             </ul>
           </div>
@@ -38,10 +55,10 @@
 
             </div>
             <div class="user-bar__cart">
-              
+
             </div>
             <div class="user-bar__search">
-              
+
             </div>
           </div>
         </div>
@@ -51,7 +68,7 @@
           </div>
           <div class="breadcrumbs">
             <div class="breadcrumbs-links">
-              <ul class="breadcrumbs-links__list">
+              <ul class="breadcrumbs-links__list grid-y">
                 <li class="breadcrumbs-links__item">
                   home
                 </li>
@@ -74,31 +91,32 @@
             </div>
             <div class="breadcrumbs-nav">
               <button class="breadcrumbs-nav-burger">
-                
+
               </button>
             </div>
           </div>
         </div>
         <div class="slider header-slider header-books">
-        <div class="header-books-content">
-          <div class="header-books-wrapper">
-            <div class="header-books-info">
-              <h1 class="header-books-info__headline">
-                Life of the wild
-              </h1>
-              <p class="header-books-info__paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis urna, a eu.
-              </p>
+          <div class="header-books-content">
+            <div class="header-books-wrapper">
+              <div class="header-books-info">
+                <h1 class="header-books-info__headline">
+                  Life of the wild
+                </h1>
+                <p class="header-books-info__paragraph ">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim
+                  pharetra hac. Urna commodo, lacus ut magna velit eleifend. Amet, quis urna, a eu.
+                </p>
+              </div>
+              <div class="btn header-books-btn">
+                <button>
+                  Read more
+                </button>
+              </div>
             </div>
-            <div class="btn header-books-btn">
-              <button>
-                Read more
-              </button>
-            </div>
-          </div>
-          <div class="header-books-images">
+            <div class="header-books-images">
 
-          </div>
+            </div>
           </div>
         </div>
       </div>
@@ -109,324 +127,75 @@
         <img src="" alt="">
         <img src="" alt="">
       </div>
-    </section>
-    <section class="products featured-section">
-      <div class="featured-info">
-        <span class="featured-info__description">Some quality items</span>
-        <h2 class="featured-info__headline">Featured Books</h2>
-      </div>
-      <div class="featured-slider">
-        <div class="featured-slider-wrapper">
-          <div class="featured-item">
-            <div class="featured-item-cover">
-              <img src="" alt="">
-            </div>
-            <div class="featured-item-info">
-              <h3 class="featured-item-info__headline">
-                Simple way of piece life
-              </h3>
-              <p class="featured-item-info__author">
-                Armor Ramsey
-              </p>
-              <span class="featured-item-info__price">
-                $ 40.00
-              </span>
-            </div>
-            <div class="featured-item-cover">
-              <img src="" alt="">
-            </div>
-            <div class="featured-item-info">
-              <h3 class="featured-item-info__headline">
-                Great travel at desert
-              </h3>
-              <p class="featured-item-info__author">
-                Sanchit Howdy
-              </p>
-              <span class="featured-item-info__price">
-                $ 38.00
-              </span>
-            </div>
-            <div class="featured-item-cover">
-              <img src="" alt="">
-            </div>
-            <div class="featured-item-info">
-              <h3 class="featured-item-info__headline">
-                The lady beauty Scarlett
-              </h3>
-              <p class="featured-item-info__author">
-                Arthur Doyle
-              </p>
-              <span class="featured-item-info__price">
-                $ 45.00
-              </span>
-            </div>
-            <div class="featured-item-cover">
-              <img src="" alt="">
-            </div>
-            <div class="featured-item-info">
-              <h3 class="featured-item-info__headline">
-                Once upon a time
-              </h3>
-              <p class="featured-item-info__author">
-                Klien Marry
-              </p>
-              <span class="featured-item-info__price">
-                $ 35.00
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="featured-action-wrapper">
-        <div class="slider-btn featured-slider">
-          <ul class="featured-slider-list">
-            <li class="featured-slider-item">
-              <button class="featured-slider-btn">
-
-              </button>
-            </li>
-            <li class="featured-slider-item">
-              <button class="featured-slider-btn">
-
-              </button>
-            </li>
-            <li class="featured-slider-item">
-              <button class="featured-slider-btn">
-
-              </button>
-            </li>
-          </ul>
-        </div>
-        <div class="featured-more">
-          <a class="info-link featured-more__link" href="">View all products</a>
-        </div>
-      </div>
-      </div>
-    </section>
-    <section class="preview-section">
-      <div class="preview-goods">
-        <div class="preview-goods-book">
-          <img src="" alt="">
-        </div>
-        <div class="preview-goods-info">
-          <h2 class="preview-goods-info__headline">
-            Best selling book
-          </h2>
-          <span class="preview-goods-info__wave">
+    </div>
+  </section>
+  <section class="products featured-section">
+    <div class="featured-info">
+      <span class="featured-info__description">Some quality items</span>
+      <h2 class="featured-info__headline">Featured Books</h2>
+    </div>
+    <div class="featured-slider">
+      <div class="featured-slider-wrapper">
+        <div class="featured-item">
+          <div class="featured-item-cover">
             <img src="" alt="">
-          </span>
-          <p class="preview-goods-info__author">
-            By Timbur Hood
-          </p>
-          <h3 class="preview-goods-info__tagline">
-            Birds gonna be happy
-          </h3>
-          <p class="preview-goods-info__description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.
-          </p>
-          <span class="preview-goods-info__price">
-            $ 45.00
-          </span>
-          <a class="info-link preview-goods-info__link" href=""></a>
-        </div>
-      </div>
-    </section>
-    <section class="popular-section">
-      <div class="popular-info">
-        <span class="popular-info__description">Some quality items</span>
-        <h2 class="popular-info__headline">Featured Books</h2>
-      </div>
-      <div class="popular-offer">
-        <div class="popular-filter">
-          <ul class="popular-filter-list">
-            <li class="popular-filter-list__item">
-              <a class="popular-filter-list__link" href="">All Genre</a>
-            </li>
-            <li class="popular-filter-list__item">
-              <a class="popular-filter-list__link" href="">Business</a>
-            </li>
-            <li class="popular-filter-list__item">
-              <a class="popular-filter-list__link" href="">Technology</a>
-            </li>
-            <li class="popular-filter-list__item">
-              <a class="popular-filter-list__link" href="">Adventure</a>
-            </li>
-            <li class="popular-filter-list__item">
-              <a class="popular-filter-list__link" href="">Romantic</a>
-            </li>
-            <li class="popular-filter-list__item">
-              <a class="popular-filter-list__link" href="">Fictional</a>
-            </li>
-          </ul>
-        </div>
-        <div class="popular-goods">
-          <div class="popular-goods">
-            <h3 class="popular-goods__headline">
-              Portrait photography
-            </h3>
-            <p class="popular-goods__author">
-              Adam Silber
-            </p>
-            <span class="popular-goods__price">
-              $ 45.00
-            </span>
           </div>
-          <div class="popular-goods">
-            <h3 class="popular-goods__headline">
-              Once upon a time
-            </h3>
-            <p class="popular-goods__author">
-              Klien Marry
-            </p>
-            <span class="popular-goods__price">
-              $ 35.00
-            </span>
-          </div>
-          <div class="popular-goods">
-            <h3 class="popular-goods__headline">
-              Tips of simple lifestyle
-            </h3>
-            <p class="popular-goods__author">
-              Bratt Smith
-            </p>
-            <span class="popular-goods__price">
-              $ 35.00
-            </span>
-          </div>
-          <div class="popular-goods">
-            <h3 class="popular-goods__headline">
-              Just felt from outside
-            </h3>
-            <p class="popular-goods__author">
-              Nicole Wilson
-            </p>
-            <span class="popular-goods__price">
-              $ 40.00
-            </span>
-          </div>
-          <div class="popular-goods">
-            <h3 class="popular-goods__headline">
-              Peaceful Enlightment
-            </h3>
-            <p class="popular-goods__author">
-              Marmik Lama
-            </p>
-            <span class="popular-goods__price">
-              $ 45.00
-            </span>
-          </div>
-          <div class="popular-goods">
-            <h3 class="popular-goods__headline">
-              Great travel at desert
-            </h3>
-            <p class="popular-goods__author">
-              Sanchit Howdy
-            </p>
-            <span class="popular-goods__price">
-              $ 38.00
-            </span>
-          </div>
-          <div class="popular-goods">
-            <h3 class="popular-goods__headline">
-              Life among the pirates
-            </h3>
-            <p class="popular-goods__author">
-              David Woodard
-            </p>
-            <span class="popular-goods__price">
-              $ 38.00
-            </span>
-          </div>
-          <div class="popular-goods">
-            <h3 class="popular-goods__headline">
+          <div class="featured-item-info">
+            <h3 class="featured-item-info__headline">
               Simple way of piece life
             </h3>
-            <p class="popular-goods__author">
+            <p class="featured-item-info__author">
               Armor Ramsey
             </p>
-            <span class="popular-goods__price">
+            <span class="featured-item-info__price">
               $ 40.00
+            </span>
+          </div>
+          <div class="featured-item-cover">
+            <img src="" alt="">
+          </div>
+          <div class="featured-item-info">
+            <h3 class="featured-item-info__headline">
+              Great travel at desert
+            </h3>
+            <p class="featured-item-info__author">
+              Sanchit Howdy
+            </p>
+            <span class="featured-item-info__price">
+              $ 38.00
+            </span>
+          </div>
+          <div class="featured-item-cover">
+            <img src="" alt="">
+          </div>
+          <div class="featured-item-info">
+            <h3 class="featured-item-info__headline">
+              The lady beauty Scarlett
+            </h3>
+            <p class="featured-item-info__author">
+              Arthur Doyle
+            </p>
+            <span class="featured-item-info__price">
+              $ 45.00
+            </span>
+          </div>
+          <div class="featured-item-cover">
+            <img src="" alt="">
+          </div>
+          <div class="featured-item-info">
+            <h3 class="featured-item-info__headline">
+              Once upon a time
+            </h3>
+            <p class="featured-item-info__author">
+              Klien Marry
+            </p>
+            <span class="featured-item-info__price">
+              $ 35.00
             </span>
           </div>
         </div>
       </div>
-      <div class="popular-quote">
-        <h2 class="popular-quote__headline">Quote of the day</h2>
-        <span class="popular-wave"></span>
-        <p class="popular-quote__paragraph">
-          “The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”
-        </p>
-        <span class="popular-quote__author">
-          Dr. Seuss
-        </span>
-      </div>
-    </section>
-    <section class="products offer-section">
-      <div class="featured-info">
-        <span class="featured-info__description">Some quality items</span>
-        <h2 class="featured-info__headline">Featured Books</h2>
-      </div>
-      <div class="featured-slider">
-        <div class="featured-slider-wrapper">
-          <div class="featured-item">
-            <div class="featured-item-cover">
-              <img src="" alt="">
-            </div>
-            <div class="featured-item-info">
-              <h3 class="featured-item-info__headline">
-                Simple way of piece life
-              </h3>
-              <p class="featured-item-info__author">
-                Armor Ramsey
-              </p>
-              <span class="featured-item-info__price">
-                $ 40.00
-              </span>
-            </div>
-            <div class="featured-item-cover">
-              <img src="" alt="">
-            </div>
-            <div class="featured-item-info">
-              <h3 class="featured-item-info__headline">
-                Great travel at desert
-              </h3>
-              <p class="featured-item-info__author">
-                Sanchit Howdy
-              </p>
-              <span class="featured-item-info__price">
-                $ 38.00
-              </span>
-            </div>
-            <div class="featured-item-cover">
-              <img src="" alt="">
-            </div>
-            <div class="featured-item-info">
-              <h3 class="featured-item-info__headline">
-                The lady beauty Scarlett
-              </h3>
-              <p class="featured-item-info__author">
-                Arthur Doyle
-              </p>
-              <span class="featured-item-info__price">
-                $ 45.00
-              </span>
-            </div>
-            <div class="featured-item-cover">
-              <img src="" alt="">
-            </div>
-            <div class="featured-item-info">
-              <h3 class="featured-item-info__headline">
-                Once upon a time
-              </h3>
-              <p class="featured-item-info__author">
-                Klien Marry
-              </p>
-              <span class="featured-item-info__price">
-                $ 35.00
-              </span>
-            </div>
-          </div>
-        </div>
-        <div class="featured-action-wrapper">
+      <div class="featured-action-wrapper">
         <div class="slider-btn featured-slider">
           <ul class="featured-slider-list">
             <li class="featured-slider-item">
@@ -450,41 +219,292 @@
           <a class="info-link featured-more__link" href="">View all products</a>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="preview-section">
+    <div class="preview-goods">
+      <div class="preview-goods-book">
+        <img src="" alt="">
       </div>
-    </section>
-    <section class="subscribe-section">
-      <div class="subscribe-wrapper">
-        <div class="subscribe-slogan">
-          <h2 class="subscribe-slogan__headline">
-            Subscribe to 
-            our newsletter
-          </h2>
-          <span class="subscribe-slogan__wave">
-
+      <div class="preview-goods-info">
+        <h2 class="preview-goods-info__headline">
+          Best selling book
+        </h2>
+        <span class="preview-goods-info__wave">
+          <img src="" alt="">
+        </span>
+        <p class="preview-goods-info__author">
+          By Timbur Hood
+        </p>
+        <h3 class="preview-goods-info__tagline">
+          Birds gonna be happy
+        </h3>
+        <p class="preview-goods-info__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eu feugiat amet, libero ipsum enim pharetra hac.
+        </p>
+        <span class="preview-goods-info__price">
+          $ 45.00
+        </span>
+        <a class="info-link preview-goods-info__link" href=""></a>
+      </div>
+    </div>
+  </section>
+  <section class="popular-section">
+    <div class="popular-info">
+      <span class="popular-info__description">Some quality items</span>
+      <h2 class="popular-info__headline">Featured Books</h2>
+    </div>
+    <div class="popular-offer">
+      <div class="popular-filter">
+        <ul class="popular-filter-list">
+          <li class="popular-filter-list__item">
+            <a class="popular-filter-list__link" href="">All Genre</a>
+          </li>
+          <li class="popular-filter-list__item">
+            <a class="popular-filter-list__link" href="">Business</a>
+          </li>
+          <li class="popular-filter-list__item">
+            <a class="popular-filter-list__link" href="">Technology</a>
+          </li>
+          <li class="popular-filter-list__item">
+            <a class="popular-filter-list__link" href="">Adventure</a>
+          </li>
+          <li class="popular-filter-list__item">
+            <a class="popular-filter-list__link" href="">Romantic</a>
+          </li>
+          <li class="popular-filter-list__item">
+            <a class="popular-filter-list__link" href="">Fictional</a>
+          </li>
+        </ul>
+      </div>
+      <div class="popular-goods">
+        <div class="popular-goods">
+          <h3 class="popular-goods__headline">
+            Portrait photography
+          </h3>
+          <p class="popular-goods__author">
+            Adam Silber
+          </p>
+          <span class="popular-goods__price">
+            $ 45.00
           </span>
         </div>
-        <div class="subscribe-form">
-          <p class="subscribe-form__info">
-            Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, consectetur. Elit adipiscing enim pharetra hac.
+        <div class="popular-goods">
+          <h3 class="popular-goods__headline">
+            Once upon a time
+          </h3>
+          <p class="popular-goods__author">
+            Klien Marry
           </p>
-          <form class="subscribe-form-offer">
-            <label for="name">name</label>
-            <input type="text">
-          </form>  
+          <span class="popular-goods__price">
+            $ 35.00
+          </span>
+        </div>
+        <div class="popular-goods">
+          <h3 class="popular-goods__headline">
+            Tips of simple lifestyle
+          </h3>
+          <p class="popular-goods__author">
+            Bratt Smith
+          </p>
+          <span class="popular-goods__price">
+            $ 35.00
+          </span>
+        </div>
+        <div class="popular-goods">
+          <h3 class="popular-goods__headline">
+            Just felt from outside
+          </h3>
+          <p class="popular-goods__author">
+            Nicole Wilson
+          </p>
+          <span class="popular-goods__price">
+            $ 40.00
+          </span>
+        </div>
+        <div class="popular-goods">
+          <h3 class="popular-goods__headline">
+            Peaceful Enlightment
+          </h3>
+          <p class="popular-goods__author">
+            Marmik Lama
+          </p>
+          <span class="popular-goods__price">
+            $ 45.00
+          </span>
+        </div>
+        <div class="popular-goods">
+          <h3 class="popular-goods__headline">
+            Great travel at desert
+          </h3>
+          <p class="popular-goods__author">
+            Sanchit Howdy
+          </p>
+          <span class="popular-goods__price">
+            $ 38.00
+          </span>
+        </div>
+        <div class="popular-goods">
+          <h3 class="popular-goods__headline">
+            Life among the pirates
+          </h3>
+          <p class="popular-goods__author">
+            David Woodard
+          </p>
+          <span class="popular-goods__price">
+            $ 38.00
+          </span>
+        </div>
+        <div class="popular-goods">
+          <h3 class="popular-goods__headline">
+            Simple way of piece life
+          </h3>
+          <p class="popular-goods__author">
+            Armor Ramsey
+          </p>
+          <span class="popular-goods__price">
+            $ 40.00
+          </span>
         </div>
       </div>
-    </section>
-    <section class="articles-section">
-      <div class="articles-info">
-        <span class="articles-info__description">
-          Read our articles
-        </span>
-        <h2 class="articles-info__headline">
-          Latest Articles
-        </h2>
+    </div>
+    <div class="popular-quote">
+      <h2 class="popular-quote__headline">Quote of the day</h2>
+      <span class="popular-wave"></span>
+      <p class="popular-quote__paragraph">
+        “The more that you read, the more things you will know. The more that you learn, the more places you’ll go.”
+      </p>
+      <span class="popular-quote__author">
+        Dr. Seuss
+      </span>
+    </div>
+  </section>
+  <section class="products offer-section">
+    <div class="featured-info">
+      <span class="featured-info__description">Some quality items</span>
+      <h2 class="featured-info__headline">Featured Books</h2>
+    </div>
+    <div class="featured-slider">
+      <div class="featured-slider-wrapper">
+        <div class="featured-item">
+          <div class="featured-item-cover">
+            <img src="" alt="">
+          </div>
+          <div class="featured-item-info">
+            <h3 class="featured-item-info__headline">
+              Simple way of piece life
+            </h3>
+            <p class="featured-item-info__author">
+              Armor Ramsey
+            </p>
+            <span class="featured-item-info__price">
+              $ 40.00
+            </span>
+          </div>
+          <div class="featured-item-cover">
+            <img src="" alt="">
+          </div>
+          <div class="featured-item-info">
+            <h3 class="featured-item-info__headline">
+              Great travel at desert
+            </h3>
+            <p class="featured-item-info__author">
+              Sanchit Howdy
+            </p>
+            <span class="featured-item-info__price">
+              $ 38.00
+            </span>
+          </div>
+          <div class="featured-item-cover">
+            <img src="" alt="">
+          </div>
+          <div class="featured-item-info">
+            <h3 class="featured-item-info__headline">
+              The lady beauty Scarlett
+            </h3>
+            <p class="featured-item-info__author">
+              Arthur Doyle
+            </p>
+            <span class="featured-item-info__price">
+              $ 45.00
+            </span>
+          </div>
+          <div class="featured-item-cover">
+            <img src="" alt="">
+          </div>
+          <div class="featured-item-info">
+            <h3 class="featured-item-info__headline">
+              Once upon a time
+            </h3>
+            <p class="featured-item-info__author">
+              Klien Marry
+            </p>
+            <span class="featured-item-info__price">
+              $ 35.00
+            </span>
+          </div>
+        </div>
       </div>
-      <div class="articles-wrapper">
-        <div class="articles-container">
+      <div class="featured-action-wrapper">
+        <div class="slider-btn featured-slider">
+          <ul class="featured-slider-list">
+            <li class="featured-slider-item">
+              <button class="featured-slider-btn">
+
+              </button>
+            </li>
+            <li class="featured-slider-item">
+              <button class="featured-slider-btn">
+
+              </button>
+            </li>
+            <li class="featured-slider-item">
+              <button class="featured-slider-btn">
+
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="featured-more">
+          <a class="info-link featured-more__link" href="">View all products</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="subscribe-section">
+    <div class="subscribe-wrapper">
+      <div class="subscribe-slogan">
+        <h2 class="subscribe-slogan__headline">
+          Subscribe to
+          our newsletter
+        </h2>
+        <span class="subscribe-slogan__wave">
+
+        </span>
+      </div>
+      <div class="subscribe-form">
+        <p class="subscribe-form__info">
+          Sed eu feugiat amet, libero ipsum enim pharetra hac dolor sit amet, consectetur. Elit adipiscing enim pharetra
+          hac.
+        </p>
+        <form class="subscribe-form-offer">
+          <label for="name">name</label>
+          <input type="text">
+        </form>
+      </div>
+    </div>
+  </section>
+  <section class="articles-section">
+    <div class="articles-info">
+      <span class="articles-info__description">
+        Read our articles
+      </span>
+      <h2 class="articles-info__headline">
+        Latest Articles
+      </h2>
+    </div>
+    <div class="articles-wrapper">
+      <div class="articles-container">
         <div class="articles-content">
           <img class="articles-content__img" src="" alt="">
           <p class="articles-content__date">2 aug, 2021</p>
@@ -563,136 +583,141 @@
     <button class="articles-btn">
       read more
     </button>
-    </section>
-    <section class="app-section">
-      <div class="app">
-        <img class="app-img" src="" alt="">
-        <div class="app-info">
-          <h2 class="app-info__headline">
-            Download our app now !
-          </h2>
-          <span class="app-info__wave"></span>
-          <p class="app-info__paragraph">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus nonet psryroin. Amet sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames semper erat ac in suspendisse iaculis.
-          </p>
-          <div class="app-info-links">
-            <a class="app-info-links__google" href=""></a>
-            <a class="app-info-links__apple" href=""></a>
-          </div>
+  </section>
+  <section class="app-section">
+    <div class="app">
+      <img class="app-img" src="" alt="">
+      <div class="app-info">
+        <h2 class="app-info__headline">
+          Download our app now !
+        </h2>
+        <span class="app-info__wave"></span>
+        <p class="app-info__paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sagittis sed ptibus liberolectus nonet psryroin. Amet
+          sed lorem posuere sit iaculis amet, ac urna. Adipiscing fames semper erat ac in suspendisse iaculis.
+        </p>
+        <div class="app-info-links">
+          <a class="app-info-links__google" href=""></a>
+          <a class="app-info-links__apple" href=""></a>
         </div>
       </div>
-    </section>
-    <section class="footer-section">
-        <div class="footer">
-          <span class="footer-tagline">Booksaw</span>
-          <div class="footer-menu-wrapper">
-            <div class="footer-menu">
-            <h3 class="footer-menu__headline">
-              About us
-            </h3>
-            <ul class="footer-menu__list">
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">vision</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">articles</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">careers</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">service terms</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">donate</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-menu">
-            <h3 class="footer-menu__headline">
-              Discover
-            </h3>
-            <ul class="footer-menu__list">
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">Home</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">Books</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">Authors</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">Subjects</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">Advanced Search</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-menu">
-            <h3 class="footer-menu__headline">
-              My account
-            </h3>
-            <ul class="footer-menu__list">
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">Sign In</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">View Cart</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">My Wishtlist</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">Track My Order</a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-menu">
-            <h3 class="footer-menu__headline">
-              Help
-            </h3>
-            <ul class="footer-menu__list">
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">Help center</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">Report a problem</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">Suggesting edits</a>
-              </li>
-              <li class="footer-menu__item">
-                <a class="footer-menu__link" href="">Contact us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        </div>
-        <div class="footer-socials">
-          <span class="footer-socials__copyright">
-            © 2021 Templates Jungle. All rights reserved.
-          </span>
-          <ul class="links-list">
-            <li class="links-list__item">
-              facebook
+    </div>
+  </section>
+  <section class="footer-section">
+    <div class="footer">
+      <span class="footer-tagline">Booksaw</span>
+      <div class="footer-menu-wrapper">
+        <div class="footer-menu">
+          <h3 class="footer-menu__headline">
+            About us
+          </h3>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">vision</a>
             </li>
-            <li class="links-list__item">
-              instagram
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">articles</a>
             </li>
-            <li class="links-list__item">
-              linkedin
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">careers</a>
             </li>
-            <li class="links-list__item">
-              twitter
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">service terms</a>
             </li>
-            <li class="links-list__item">
-              b
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">donate</a>
             </li>
           </ul>
         </div>
-    </section>
-    <script type="module" src="/main.js"></script>
-  </body>
+        <div class="footer-menu">
+          <h3 class="footer-menu__headline">
+            Discover
+          </h3>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">Home</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">Books</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">Authors</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">Subjects</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">Advanced Search</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <h3 class="footer-menu__headline">
+            My account
+          </h3>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">Sign In</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">View Cart</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">My Wishtlist</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">Track My Order</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-menu">
+          <h3 class="footer-menu__headline">
+            Help
+          </h3>
+          <ul class="footer-menu__list">
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">Help center</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">Report a problem</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">Suggesting edits</a>
+            </li>
+            <li class="footer-menu__item">
+              <a class="footer-menu__link" href="">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-socials">
+      <span class="footer-socials__copyright">
+        © 2021 Templates Jungle. All rights reserved.
+      </span>
+      <ul class="links-list">
+        <li class="links-list__item">
+          facebook
+        </li>
+        <li class="links-list__item">
+          instagram
+        </li>
+        <li class="links-list__item">
+          linkedin
+        </li>
+        <li class="links-list__item">
+          twitter
+        </li>
+        <li class="links-list__item">
+          b
+        </li>
+      </ul>
+    </div>
+  </section>
+  <script type="module" src="./scss/vendors/foundation.js"></script>
+  <script type="module" src="./scss/vendors/foundation.min.js"></script>
+  <script type="module" src="./scss/vendors/jquery.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
 </html>

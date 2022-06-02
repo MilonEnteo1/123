@@ -1,3 +1,10 @@
-.header-books-info__paragraph {
-    color: red;
-}
+$colors: (
+    primary: (
+        100: red,
+        200: blue,
+    )
+);
+
+// .header-books-info__paragraph {
+//     $color-primary-100;
+// }
